@@ -1,0 +1,169 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 1);
+
+}
+
+body {
+    font-size: 1.2rem;
+    font family:"Work Sans", sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/DSCF1180.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: grayscale
+
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'italianno', cursive;
+    font-style: bold;
+    font-size: 4rem;
+
+}
+
+.hero h4 {
+    font-size: 2rem;
+    font-family: 'quintessential', serif;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    font-family: 'quintessential', serif;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--shadow);
+    font-family: 'quintessential', serif;
+}
+
+.hero a:hover {
+background-color: var(--pink);
+color: white;
+}
+.waktu{
+    display: flex;
+    background-image: linear-gradient(rgba(43, 42, 42, 0.5), rgba(43, 42, 42, 0.5));
+    border-radius: 45%;
+    
+}
+.waktu div{
+    flex-basis: 100px;
+}
+.waktu div p{
+    font-size: 50px;
+    margin-bottom: -14px;
+    font-family: 'Fredericka the Great', serif;
+}
+.waktu span{
+    font-family: 'quintessential', serif;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'italianno', cursive;
+    font-size: 3.2rem;
+    font-weight: 500;
+
+}
+.mynavbar .nav-link{
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+.home{
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    margin-top: -6rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    color: var(--pink);
+    font-family: 'italianno',cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.home h3{
+    color: #444;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.home p {
+    font-size: 1.3rem;
+    color: #666;    
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'sacramento', cursive;
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+/* media query */
+/* laptop */
+@media (max-width:768px){
+html{
+    font-size: 75%;
+}
+}
+
+/* tablet */
+@media (max-width:768px){
+    html{
+        font-size: 65%;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* hp */
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+}
